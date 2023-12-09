@@ -7,18 +7,16 @@ package stacks;
 
 /**
  *
- * @author pc
+ * @author github.com/abodaly
  */
 public class StackArray {
 
 	public static void main(String[] args) {
-		// Declare a stack of maximum size 4
 		StackArray myStackArray = new StackArray(4);
 
 		assert myStackArray.isEmpty();
 		assert !myStackArray.isFull();
 
-		// Populate the stack
 		myStackArray.push(5);
 		myStackArray.push(8);
 		myStackArray.push(2);
@@ -36,7 +34,6 @@ public class StackArray {
 	private int max_size;
 	private int[] stackArray;
 	private int top;
-	// constructor uising deffualt capcity & constructor using int size 
 
 	public StackArray() {
 		this(DEFFUALT_CAPACITY);
